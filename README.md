@@ -1,8 +1,6 @@
-# Retro-Centipede-Arcade-Game-SFML
-
 # Retro Centipede Arcade Game
 
-This project is a simplified recreation of the classic arcade game **Centipede**, built as part of a coursework assignment for ECE4122/6122. It uses **SFML (Simple and Fast Multimedia Library)** for 2D graphics and includes class-based design principles in C++.
+This project is a simplified recreation of the classic arcade game **Centipede**. It uses **SFML (Simple and Fast Multimedia Library)** for 2D graphics and includes class-based design principles in C++.
 
 ## Features
 - **Game Objective**: Destroy all the centipede segments or survive until lives run out.
@@ -18,9 +16,6 @@ This project is a simplified recreation of the classic arcade game **Centipede**
 - **Game Reset**: Once the game ends, it returns to the start screen.
 
 ## Technical Details
-- **Classes**:
-  - `ECE_Centipede`: Manages the centipede's position, segmentation upon being hit, and collision detection.
-  - `ECE_LaserBlast`: Tracks the laser blasts' position and collision interactions with objects.
 - **Randomization**: Mushrooms are randomly placed in the game area using `std::uniform_int_distribution`.
 - **Collision Handling**: Detects and responds to collisions between the centipede, mushrooms, laser blasts, and the spider.
 - **Game States**: Tracks score, remaining lives, and transitions between start and gameplay screens.
@@ -31,20 +26,3 @@ This project is a simplified recreation of the classic arcade game **Centipede**
 2. Compile the project using the provided `CMakeLists.txt`.
 3. Run the game, and use the arrow keys to move the spaceship and the spacebar to shoot.
 4. Aim to destroy all the centipede segments while avoiding the spider and managing your lives.
-
-## Folder Structure
-```plaintext
-Lab1/
-├── CMakeLists.txt
-├── code/
-│   ├── main.cpp
-│   ├── ECE_Centipede.h
-│   ├── ECE_Centipede.cpp
-│   ├── ECE_LaserBlast.h
-│   ├── ECE_LaserBlast.cpp
-│   └── ...
-├── graphics/
-│   ├── centipede.png
-│   ├── mushroom.png
-│   ├── spaceship.png
-│   └── ...
